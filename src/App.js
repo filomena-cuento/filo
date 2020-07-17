@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import roomBg from './assets/img/room-bg2.png' 
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="img-container">
+        <img src={roomBg} className="img-fluid" alt="Fondo"></img>
+        <div className="title-text">  
+          <p className="mb-0 animate__animated animate__fadeIn">FILOMENA</p>
+        </div>
+          <div className="start-text">
+            <p className="m-0 animate__animated animate__fadeIn animate__delay-5s">EMPEZÁ</p>
+          </div>
+      </div>     
     </div>
   );
 }
 
-export default App;
+
