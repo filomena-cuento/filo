@@ -2,20 +2,20 @@ import { useState, useEffect } from 'react'
 
 
 export const useFetch = ( url ) => {
-    const [state, setState] = useState({data: null, loading: true, error: null});
+    const [response, setResponse] = useState({data: null, loading: true, error: null});
 
     useEffect( () => {
 
-        setState({data:null, loading:true, error: null})
-
+        setResponse({data:null, loading:true, error: null})
+        
         fetch( url )
-            .then( resp => resp.json())
+            .then( resp => resp.blob())
             .then( data => {
+                console.log(data);
+                setResponse({loading: false, error:null, data: data})
 
-                setState({loading: false, error:null, data: data})
-
-            } )
+            })
     }, [url]);
 
-    return state;
+    return response;
 }

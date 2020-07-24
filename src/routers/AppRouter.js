@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 
 import { TitleScreen } from '../components/TitleScreen';
-import { InteractiveTextScreen } from '../components/InteractiveTextScreen';
+import { TextScreen } from '../components/TextScreen';
 
 export const AppRouter = () => {
     return (
@@ -14,7 +14,7 @@ export const AppRouter = () => {
             <div>        
                 <Switch>
                     <Route exact path="/" component={ TitleScreen } />
-                    <Route exact path="/filomena" component={ InteractiveTextScreen } />
+                    <Route exact path="/filomena" component={ TextScreen } />
                 </Switch>
           </div>
         </Router>
