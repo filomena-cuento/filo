@@ -1,26 +1,13 @@
 import React from 'react'
-import { useFetch } from '../hooks/useFetch';
 
-
-
-export const TextBlock = ({ props }) => {
-
-    const { text, className, imgUrl, soundUrl } = props; 
+export const TextBlock = ({ props, isCurrent, isVisible }) => {
+    const { text, className } = props; 
     
-    const {data, loading, error} = useFetch(soundUrl);
 
+    const finalClassName = className.concat(' animate__animated animate__fadeIn');
     return (
-        <div className={ className }>
-            <audio autoPlay >
-                <source src={data} type="audio/mpeg" />
-            </audio>
-
-            <img src={imgUrl} alt=""/>
-
-
+        <div className={ finalClassName } >
             <p>{text}</p>   
         </div>
     )
-    
 }
-
