@@ -37,7 +37,7 @@ export const TextArea = ( props ) => {
     useEffect( () => {
 
         const handleKeepRendering = async () => {
-            if( (nextDataBlock !== 0) && dataBlocksToRender[nextDataBlock - 1].renderNext ){
+            if( nextDataBlock !== 0 && dataBlocksToRender[nextDataBlock - 1].renderNext ){
                 await sleep(dataBlocksToRender[nextDataBlock].delay);
                 handleNextDataBlock();
             }
@@ -55,9 +55,6 @@ export const TextArea = ( props ) => {
             dataBlocksToRender[nextDataBlock]
         ]);
         setNextDataBlock(nextDataBlock + 1);
-
-        
-
     }
 
     return (
@@ -73,6 +70,7 @@ export const TextArea = ( props ) => {
                             )
                         }
                         <div className="two"></div>
+
                         <div className="three"></div>
                     
                         <div 

@@ -123,6 +123,10 @@ export const TextScreen = () => {
     }, [currentPage]);
     
 
+    
+
+    
+
     // Handles the setting of a newPage
     const handleNewPage = () => {
         setCurrentPage(currentPage + 1);    
