@@ -6,50 +6,38 @@ import { ImageComponent } from './ImageComponent';
 export const TextArea = ( props ) => {
     
     // Holds dataBlocks of current page and function to change page
-    const { dataBlocksToRender, currentPage, handleNewPage } = props;
+    const { dataBlocksToRender, handleNewPage } = props;
     
     // Holds currently rendered data blocks
     const [renderedDataBlocks, setRenderedDataBlocks] = useState([]);
 
     // Holds the id of the next element to be rendered
     const [nextDataBlock, setNextDataBlock] = useState(0);
-    //console.log('Render');
 
-    //Triggers the first render of the page
+    const [showNext, setShowNext] = useState(false);
+
+    //Triggers the render of the first line
     useEffect( () => {
         handleNextDataBlock();
     }, [dataBlocksToRender])
 
-    // Keeps the id next data block to be rendered always updated
-    // useEffect( () => {
-    //     console.log('actualizar nextDataBlock');
-        
-    //     setNextDataBlock(nextDataBlock + 1);
-
-    //     // console.log(lastId);
-    //     // console.log(renderedDataBlocks);
-    //     // if(renderedDataBlocks.length !== 0 && renderedDataBlocks[lastId].renderNext ) {
-    //     //     handleNextDataBlock();
-    //     // }
-
-    // }, [renderedDataBlocks])
-
+    // Triggers the rendering of consecutive lines
     useEffect( () => {
-
-        const handleKeepRendering = async () => {
-            if( nextDataBlock !== 0 && dataBlocksToRender[nextDataBlock - 1].renderNext ){
-                await sleep(dataBlocksToRender[nextDataBlock].delay);
-                handleNextDataBlock();
-            }
-        }
-
         handleKeepRendering();        
     }, [nextDataBlock])
-
     
+    //Handles the rendering of consecutive lines
+    const handleKeepRendering = async () => {
+        if( nextDataBlock !== 0 && dataBlocksToRender[nextDataBlock - 1].renderNext ){
+            await sleep(dataBlocksToRender[nextDataBlock].delay);
+            handleNextDataBlock();
+        } else if (nextDataBlock !== 0 && !dataBlocksToRender[nextDataBlock - 1].renderNext) {
+            setShowNext(true);
+
+        }
+    }
     // Sets next textBlock on textBlocksToRender for it to be rendered when user presses 'next'
     const handleNextDataBlock = () => {
-        //console.log('handle next: ' + nextDataBlock);
         setRenderedDataBlocks([
             ...renderedDataBlocks,
             dataBlocksToRender[nextDataBlock]
@@ -57,9 +45,16 @@ export const TextArea = ( props ) => {
         setNextDataBlock(nextDataBlock + 1);
     }
 
+    // Performs cleanup of the page when loading a new one
+    const handleNextPage = () => {
+        setNextDataBlock(0);
+        setShowNext(false);
+        setRenderedDataBlocks([]);
+        handleNewPage();
+    }
+
     return (
         <div>   
-        {console.log('render')}
             <div className="container">
                 <div className="row d">
                     <div className="textarea col-12 grid-wrapper">
@@ -69,20 +64,25 @@ export const TextArea = ( props ) => {
                                 renderedDataBlocks.map( dataBlock => typeOfBlockToRender(dataBlock) )
                             )
                         }
-                        <div className="two"></div>
+                        <div className="grs-6"></div>
 
-                        <div className="three"></div>
+                        { showNext ?(
+                            <div 
+                                className="next-text d-flex align-items-center  animate__animated animate__fadeIn" 
+                                onClick={handleNextPage}
+                            >                             
+                                <p className="m-0 pb-1">
+                                    Siguiente
+                                </p>
+                                <i className="fa fa-play-circle ml-2" aria-hidden="true"></i>       
+                            </div>
+                        ) : (
+                            <>
+                            </>
+                        )
                     
-                        <div 
-                            className="next-text d-flex align-items-center" 
-                            // onClick={handleNextDataBlock}
-                            onClick={handleNewPage}
-                        >                             
-                            <p className="m-0 pb-1">
-                                Siguiente
-                            </p>
-                            <i className="fa fa-play-circle ml-2" aria-hidden="true"></i>       
-                        </div>
+                        }
+
                     </div>
                 </div>
             </div>

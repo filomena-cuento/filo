@@ -2,6 +2,13 @@
   --animate-duration: 4s;
 }
 
+.full-container {
+  
+  height: 100vh;
+  width: 100vw;
+}
+
+
 
 .img-container {
   position: relative;
@@ -10,6 +17,7 @@
 
 /*100vh = una altura de la pantalla*/
 /*100vw = un ancho de la pantalla*/
+
 
 .title-text {
   /* display: none; */
@@ -41,9 +49,12 @@
 .textarea {
   position: relative;
   background-color: rgb(0, 0, 0);
-  margin-top: 15vh;
-  height: 70vh;
-  opacity: 0.9;
+  margin-top: 5vh;
+  height: 600px;
+  min-height: 600px;
+  width: 1024px;
+  min-width: 1024px;
+  opacity: 0.92;
   color: white;
 }
 
@@ -51,19 +62,127 @@
   z-index: 100;
   position: absolute;
   font-size: calc(0.5em + 0.8vw);
-  right: 3%;
-  bottom: 5%;
+  right: 1%;
+  bottom: 1%;
   cursor: pointer;
 }
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1vh;
+  grid-auto-rows: repeat(6, 1fr);
+  /*grid-auto-rows: minmax(10vh, auto);*/
 }
 
 /*grid positions*/
+
+/*GRID COLUMNS*/
+/*START*/
+.gcs-1 {
+  grid-column-start: 1;
+}
+.gcs-2 {
+  grid-column-start: 2;
+}
+.gcs-3 {
+  grid-column-start: 3;
+}
+.gcs-4 {
+  grid-column-start: 4;
+}
+.gcs-5 {
+  grid-column-start: 5;
+}
+.gcs-6 {
+  grid-column-start: 6;
+}
+
+/*END*/
+.gce-1 {
+  grid-column-end: 1;
+}
+.gce-2 {
+  grid-column-end: 2;
+}
+.gce-3 {
+  grid-column-end: 3;
+}
+.gce-4 {
+  grid-column-end: 4;
+}
+.gce-5 {
+  grid-column-end: 5;
+}
+.gce-6 {
+  grid-column-end: 6;
+}
+.gce-7 {
+  grid-column-end: 7;
+}
+
+
+/*GRID ROWS*/
+/*START*/
+.grs-1 {
+  grid-row-start: 1;
+}
+.grs-2 {
+  grid-row-start: 2;
+}
+.grs-3 {
+  grid-row-start: 3;
+}
+.grs-4 {
+  grid-row-start: 4;
+}
+.grs-5 {
+  grid-row-start: 5;
+}
+.grs-6 {
+  grid-row-start: 6;
+}
+
+/*END*/
+.gre-1 {
+  grid-row-end: 1;
+}
+.gre-2 {
+  grid-row-end: 2;
+}
+.gre-3 {
+  grid-row-end: 3;
+}
+.gre-4 {
+  grid-row-end: 4;
+}
+.gre-5 {
+  grid-row-end: 5;
+}
+.gre-6 {
+  grid-row-end: 6;
+}
+.gre-7 {
+  grid-row-end: 7;
+}
+
+.up {
+  align-self: start;
+}
+
+.center {
+  align-self: center;
+}
+
+.down {
+  align-self: end;
+}
+
+.center-vert {
+  place-self: center;
+}
+
+
 .one {
   grid-column: 1 / 4;
   grid-row: 1;
