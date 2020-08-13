@@ -47,6 +47,7 @@
 
 /* TextScreen */
 .textarea {
+  padding: 15px;
   position: relative;
   background-color: rgb(0, 0, 0);
   margin-top: 5vh;
@@ -71,8 +72,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1vh;
-  grid-auto-rows: repeat(6, 1fr);
-  /*grid-auto-rows: minmax(10vh, auto);*/
+  grid-auto-rows: minmax(10vh, auto);
 }
 
 /*grid positions*/
@@ -177,6 +177,42 @@
 .down {
   align-self: end;
 }
+
+.left {
+  justify-self: start;
+}
+
+.center-hori {
+  justify-self: center;
+}
+
+.right {
+  justify-self: end;
+}
+
+
+
+/*RUEDA*/
+.rueda-cabeza {
+  padding-left: 3ch;
+}
+.rueda-r {
+  padding-left: 10ch;
+}
+.rueda-u {
+  padding-left: 12ch;
+}
+.rueda-e {
+  padding-left: 14ch;
+}
+.rueda-d {
+  padding-left: 16ch;
+}
+.rueda-a {
+  padding-left: 18ch;
+}
+
+
 
 .center-vert {
   place-self: center;
