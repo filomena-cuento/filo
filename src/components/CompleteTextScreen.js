@@ -1,9 +1,18 @@
 import React from 'react'
 
 export const CompleteTextScreen = () => {
+
     return (
-        <div>
-            
+        <div className="black-bg">
+            <div className="container">
+                <div className="row">
+                    <div className="complete-textarea">
+                        
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     )
 }

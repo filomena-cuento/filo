@@ -3,12 +3,9 @@
 }
 
 .full-container {
-  
   height: 100vh;
   width: 100vw;
 }
-
-
 
 .img-container {
   position: relative;
@@ -191,8 +188,6 @@
   justify-self: end;
 }
 
-
-
 /*RUEDA*/
 .rueda-cabeza {
   padding-left: 3ch;
@@ -268,3 +263,46 @@
 .mb-0 {
   margin-bottom: 0px;
 }
+
+/*CREDITS*/
+.tar {
+  text-align: right;
+}
+  
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* COMPLETE TEXT SCREEN */
+
+.black-bg {
+  background-color: rgb(8, 8, 8);
+}
+
+.complete-textarea {
+  padding: 15px;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  margin: auto;
+  margin-top: 5vh; 
+  height: 3000px;
+  min-height: 3000px;
+  width: 1024px;
+  min-width: 1024px;
+  opacity: 0.92;
+  color: white;
+}
+
+
