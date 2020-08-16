@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { TextBlock } from './TextBlock';
 import { AudioComponent } from './AudioComponent';
 import { ImageComponent } from './ImageComponent';
@@ -6,7 +7,7 @@ import { ImageComponent } from './ImageComponent';
 export const TextArea = ( props ) => {
     
     // Holds dataBlocks of current page and function to change page
-    const { dataBlocksToRender, handleNewPage } = props;
+    const { dataBlocksToRender, isLastPage, handleNewPage } = props;
     
     // Holds currently rendered data blocks
     const [renderedDataBlocks, setRenderedDataBlocks] = useState([]);
@@ -14,6 +15,7 @@ export const TextArea = ( props ) => {
     // Holds the id of the next element to be rendered
     const [nextDataBlock, setNextDataBlock] = useState(0);
 
+    // Should the 'next' show or not
     const [showNext, setShowNext] = useState(false);
 
     //Triggers the render of the first line
@@ -64,21 +66,31 @@ export const TextArea = ( props ) => {
                                 renderedDataBlocks.map( dataBlock => typeOfBlockToRender(dataBlock) )
                             )
                         }
-                        <div className="grs-6"></div>
 
-                        { showNext ?(
+                        { (showNext && !isLastPage) ?(
                             <div 
                                 className="next-text d-flex align-items-center  animate__animated animate__fadeIn" 
                                 onClick={handleNextPage}
                             >                             
-                                <p className="m-0 pb-1">
+                                <p className="m-0 pb-01">
                                     Siguiente
                                 </p>
                                 <i className="fa fa-play-circle ml-2" aria-hidden="true"></i>       
                             </div>
                         ) : (
-                            <>
-                            </>
+                            (showNext && isLastPage) ? (
+                                <Link exact='true' to="/credits">
+                                <div 
+                                className="next-text d-flex align-items-center  animate__animated animate__fadeIn">                             
+                                <p className="m-0 pb-01">
+                                    Terminar...
+                                </p>
+                                <i className="fa fa-play-circle ml-2" aria-hidden="true"></i>       
+                            </div>
+                                </Link>
+                                ) : (
+                                    <></>
+                                )
                         )
                     
                         }
