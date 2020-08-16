@@ -64,7 +64,7 @@ export const TextArea = ( props ) => {
                                 renderedDataBlocks.map( dataBlock => typeOfBlockToRender(dataBlock) )
                             )
                         }
-                        <div className="grs-6"></div>
+                    
 
                         { showNext ?(
                             <div 

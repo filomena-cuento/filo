@@ -72,7 +72,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1vh;
-  grid-auto-rows: minmax(10vh, auto);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 /*grid positions*/
@@ -212,8 +212,33 @@
   padding-left: 18ch;
 }
 
+/*SE QUEMA*/
+.sequema2 {
+  padding-left: 16ch;
+}
+.sequema3 {
+  padding-left: 26ch;
+}
+.pero {
+  padding-left: 36ch;
+}
 
+.center-vert {
+  place-self: center;
+}
 
+/*SE QUEMA 2*/
+.sequemaI {
+  padding-left: 15ch;
+}
+.sequemaII {
+  padding-left: 24ch;
+
+}
+.nopuedo {
+  padding-left: 33ch;
+
+}
 .center-vert {
   place-self: center;
 }
