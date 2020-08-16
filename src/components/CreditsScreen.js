@@ -46,7 +46,7 @@ export const CreditsScreen = () => {
                         <Link exact='true' to="/cuento">
                             <div className=" d-flex align-items-center link">                             
                                 <p className="m-0 pb-1">
-                                    Lee el texto completo
+                                    Leer el texto completo
                                 </p>
                                 <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i>       
                             </div>
@@ -57,7 +57,7 @@ export const CreditsScreen = () => {
                             <div className=" d-flex align-items-center link">                             
                                 <i className="fa fa-arrow-left ml-2" aria-hidden="true">  </i>       
                                 <p className="pl-1 m-0 pb-1">
-                                    Volve al inicio
+                                    Volver al inicio
                                 </p>
                             </div>
                         </Link>

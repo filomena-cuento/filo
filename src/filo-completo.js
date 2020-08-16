@@ -1,15 +1,4 @@
-const FILO1 = [
-    {   
-        id: 0,
-        type: "audio",
-        page: 0,
-        text: "",
-        className: "",
-        delay: 100, 
-        renderNext: true,
-        url: "/assets/sounds/aprilIsTheCruelest.mp3",
-        nextPage: false,
-    },
+export const FILO1 = [
     {
         id: 1,
         type: "text",
@@ -120,35 +109,12 @@ const FILO1 = [
         renderNext: true,
         url: "",
         nextPage: true,
-    },
-    {
-        id: 11,
-        type: "audio",
-        page: 0,
-        text: "",
-        className: "",
-        delay: 4000, 
-        renderNext: false,
-        url: "/assets/sounds/nenes.mp3",
-        nextPage: true,
-    },
-
+    }
 ];
 
-const FILO2 = [
-    {   
-        id: 12,
-        type: "audio",
-        page: 0,
-        text: "",
-        className: "",
-        delay: 0, 
-        renderNext: true,
-        url: "/assets/sounds/whatAreYouThinking.mp3",
-        nextPage: false,
-    },
+export const FILO2 = [
     {
-        id: 13,
+        id: 1,
         type: "text",
         page: 0,
         text: "Estás bestialmente quieto. Hablame.",
@@ -159,7 +125,7 @@ const FILO2 = [
         nextPage: false,
     },
     {
-        id: 14,
+        id: 2,
         type: "text",
         page: 0,
         text: "¿Por qué no me hablás?",
@@ -170,7 +136,7 @@ const FILO2 = [
         nextPage: false,
     },
     {
-        id: 15,
+        id: 3,
         type: "text",
         page: 0,
         text: "Nunca sé qué estás pensando y a veces pienso que no pensás en nada.",
@@ -181,7 +147,7 @@ const FILO2 = [
         nextPage: false,
     },
     {
-        id: 16,
+        id: 4,
         type: "text",
         page: 0,
         text: "¿Seguís vivo, acaso? ¿Sigo viva?",
@@ -192,7 +158,7 @@ const FILO2 = [
         nextPage: false,
     },
     {   
-        id: 17,
+        id: 5,
         type: "text",
         page: 0,
         text:"¿Qué vamos a hacer ahora?",
@@ -203,7 +169,7 @@ const FILO2 = [
         nextPage: false,
     },
     {   
-        id: 18,
+        id: 6,
         type: "text",
         page: 0,
         text:"Me paro frente a la ventana. Busco la mirada de alguien, cualquiera. Ojos que me den cuerpo. Pero la gente ya no sale de sus cajas.",
@@ -214,7 +180,7 @@ const FILO2 = [
         nextPage: false,
     },
     {   
-        id: 19,
+        id: 7,
         type: "text",
         page: 0,
         text:"Quiero correr por la calle. Antes no sospechaba que alguna vez iba a tener este deseo intenso de solo correr por la calle, de sentir las baldosas bajo mis pies.",
@@ -225,7 +191,7 @@ const FILO2 = [
         nextPage: false,
     },
     {   
-        id: 20,
+        id: 8,
         type: "text",
         page: 0,
         text:"A la noche veo ratas rondando las veredas vacías. No hay nadie para reclamar esos espacios.",   
@@ -236,7 +202,7 @@ const FILO2 = [
         nextPage: false,
     },
     {   
-        id: 21,
+        id: 9,
         type: "img",
         page: 0,
         text: "",
@@ -248,7 +214,7 @@ const FILO2 = [
         nextPage: false,
     },
     {   
-        id: 22,
+        id: 10,
         type: "text",
         page: 0,
         text:"Ellas andan embriagadas con esa nueva libertad.",   
@@ -259,7 +225,7 @@ const FILO2 = [
         nextPage: false,
     },
     {   
-        id: 23,
+        id: 11,
         type: "text",
         page: 0,
         text:"Ya tomaron la ciudad, y no opusimos resistencia. Las miramos desde el otro lado del vidrio.",
@@ -270,7 +236,7 @@ const FILO2 = [
         nextPage: false,
     },
     {   
-        id: 24,
+        id: 12,
         type: "text",
         page: 0,
         text:"Miles de ojos observando todo desde sus ventanas, testigos de una época en la cual ya no hay protagonistas.",
@@ -282,20 +248,9 @@ const FILO2 = [
     },
 ];
 
-const FILO3 = [
-    {   
-        id: 121,
-        type: "audio",
-        page: 0,
-        text: "",
-        className: "",
-        delay: 100, //animate__delay-1s
-        renderNext: true,
-        url: "/assets/sounds/whatAreYouThinking.mp3",
-        nextPage: false,
-    },
+export const FILO3 = [
     {
-        id: 0,
+        id: 1,
         type: "text",
         page: 0,
         text: "Me siento desconectada.",
@@ -306,7 +261,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 4,
+        id: 2,
         type: "img",
         page: 0,
         text: "",
@@ -318,7 +273,7 @@ const FILO3 = [
         nextPage: false,
     },
     {
-        id: 1,
+        id: 3,
         type: "text",
         page: 0,
         text: "Mis pies están en la cama, y debajo de ellos",
@@ -329,7 +284,7 @@ const FILO3 = [
         nextPage: false,
     },
     {
-        id: 3,
+        id: 4,
         type: "text",
         page: 0,
         text: "mi corazón.",
@@ -450,9 +405,8 @@ const FILO3 = [
         url: "",
         nextPage: false,
     },
-    
     {   
-        id: 16,
+        id: 15,
         type: "text",
         page: 0,
         text: "No puedo conectar ",
@@ -463,7 +417,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 17,
+        id: 16,
         type: "text",
         page: 0,
         text: "nada",
@@ -474,7 +428,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 18,
+        id: 17,
         type: "text",
         page: 0,
         text: "con",
@@ -485,7 +439,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 19,
+        id: 18,
         type: "text",
         page: 0,
         text: "nada.",
@@ -496,7 +450,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 20,
+        id: 19,
         type: "text",
         page: 0,
         text: "La idea fija de una casa en llamas y no tener dónde escapar me inunda la cabeza. ",
@@ -507,7 +461,7 @@ const FILO3 = [
         nextPage: false,
     },
     {
-        id: 15,
+        id: 20,
         type: "img",
         page: 0,
         text: "",
@@ -530,7 +484,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 21,
+        id: 22,
         type: "text",
         page: 0,
         text: "se quema,",
@@ -541,7 +495,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 21,
+        id: 23,
         type: "text",
         page: 0,
         text: "se quema,",
@@ -552,7 +506,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 21,
+        id: 24,
         type: "text",
         page: 0,
         text: "pero nadie se mueve.",
@@ -563,7 +517,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 22,
+        id: 25,
         type: "text",
         page: 0,
         text: "La gente de los balcones observa, y el humo  ",
@@ -574,7 +528,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 23,
+        id: 26,
         type: "text",
         page: 0,
         text: "sube",
@@ -585,7 +539,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 24,
+        id: 27,
         type: "text",
         page: 0,
         text: "hasta",
@@ -596,7 +550,7 @@ const FILO3 = [
         nextPage: false,
     },
     {   
-        id: 25,
+        id: 28,
         type: "text",
         page: 0,
         text: "el cielo.",
@@ -609,18 +563,7 @@ const FILO3 = [
     
 ];
 
-const FILO4 = [
-    {   
-        id: 121,
-        type: "audio",
-        page: 0,
-        text: "",
-        className: "",
-        delay: 100, //animate__delay-1s
-        renderNext: true,
-        url: "/assets/sounds/third.mp3",
-        nextPage: false,
-    },
+export const FILO4 = [
     {
         id: 0,
         type: "text",
@@ -645,7 +588,7 @@ const FILO4 = [
         nextPage: false,
     },
     {
-        id: 3,
+        id: 2,
         type: "text",
         page: 0,
         text: "La ciudad, un montón de ruinas olvidadas.",
@@ -654,10 +597,9 @@ const FILO4 = [
         renderNext: true,
         url: "",
         nextPage: false,
-    },
-   
+    }, 
     {   
-        id: 4,
+        id: 3,
         type: "img",
         page: 0,
         text: "",
@@ -668,9 +610,8 @@ const FILO4 = [
         url: "/assets/img/cuadros.png",
         nextPage: false,
     },
-
     {   
-        id: 5,
+        id: 4,
         type: "text",
         page: 0,
         text:"Nosotros, adentro, miramos las pantallas. Nosotros, los vivos, muriendo con paciencia.",
@@ -680,9 +621,8 @@ const FILO4 = [
         url: "",
         nextPage: false,
     },
-
     {   
-        id: 14,
+        id: 5,
         type: "text",
         page: 0,
         text: "Rompés el silencio para decirme que me acerque, que deje de apretar así los puños.",
@@ -692,9 +632,8 @@ const FILO4 = [
         url: "",
         nextPage: false,
     },
-    
     {   
-        id: 16,
+        id: 6,
         type: "text",
         page: 0,
         text: "Siempre me parece ver a alguien detrás tuyo cuando te movés, pero es solo tu sombra.",
@@ -705,7 +644,7 @@ const FILO4 = [
         nextPage: false,
     },
     {   
-        id: 17,
+        id: 7,
         type: "text",
         page: 0,
         text: "Estamos solos hace demasiado tiempo y dejamos ecos nuestros por toda la casa.",
@@ -715,9 +654,8 @@ const FILO4 = [
         url: "",
         nextPage: false,
     },
-
     {   
-        id: 4,
+        id: 8,
         type: "img",
         page: 0,
         text: "",
@@ -728,9 +666,8 @@ const FILO4 = [
         url: "/assets/img/cocina.png",
         nextPage: false,
     },
-
     {   
-        id: 18,
+        id: 9,
         type: "text",
         page: 0,
         text: "Por fin va a llover esta tarde, se siente en el aire.",
@@ -740,9 +677,8 @@ const FILO4 = [
         url: "",
         nextPage: false,
     },
-   
     {   
-        id: 18,
+        id: 10,
         type: "text",
         page: 0,
         text: "Respiro ese olor húmedo y escucho el trueno a lo lejos. La lluvia muestra que ahí afuera el mundo gira todavía, sin que le importemos nosotros.",
@@ -752,9 +688,8 @@ const FILO4 = [
         url: "",
         nextPage: false,
     },
-
     {   
-        id: 18,
+        id: 11,
         type: "text",
         page: 0,
         text: "El ambiente se refresca y se borra un poco nuestro olor. Pero la casa se sigue quemando en mi cabeza.",
@@ -764,9 +699,8 @@ const FILO4 = [
         url: "",
         nextPage: false,
     },
-
     {   
-        id: 25,
+        id: 12,
         type: "text",
         page: 0,
         text: "La casa se quema,",
@@ -777,7 +711,7 @@ const FILO4 = [
         nextPage: false,
     },
     {   
-        id: 25,
+        id: 13,
         type: "text",
         page: 0,
         text: "se quema,",
@@ -787,7 +721,7 @@ const FILO4 = [
         url: "",
         nextPage: false,
     }, {   
-        id: 25,
+        id: 14,
         type: "text",
         page: 0,
         text: "se quema.",
@@ -798,7 +732,7 @@ const FILO4 = [
         nextPage: false,
     },
     {   
-        id: 25,
+        id: 15,
         type: "text",
         page: 0,
         text: "Te digo que no, que no me quiero acercar.",
@@ -810,18 +744,7 @@ const FILO4 = [
     },
 ];
 
-const FILO5 = [
-    {   
-        id: 121,
-        type: "audio",
-        page: 0,
-        text: "",
-        className: "",
-        delay: 100, //animate__delay-1s
-        renderNext: true,
-        url: "/assets/sounds/key.mp3",
-        nextPage: false,
-    },
+export const FILO5 = [
     {
         id: 0,
         type: "text",
@@ -833,7 +756,6 @@ const FILO5 = [
         url: "",
         nextPage: false,
     },
-    
     {
         id: 1,
         type: "text",
@@ -845,10 +767,8 @@ const FILO5 = [
         url: "",
         nextPage: false,
     },
-           
-   
     {   
-        id: 5,
+        id: 2,
         type: "text",
         page: 0,
         text:"La carta que encontré es el Colgado. Me decís que es una carta morbosa, que la deje de mirar. Yo te respondo que la soga no se enrosca en su cuello, sino en su pie. No tiene por qué ser una carta fatal. Es un símbolo de espera, de suspensión, de atadura. Ahí el mundo está dado vuelta, o nosotros lo miramos al revés.",
@@ -858,9 +778,8 @@ const FILO5 = [
         url: "",
         nextPage: false,
     },
-
     {   
-        id: 4,
+        id: 3,
         type: "img",
         page: 0,
         text: "",
@@ -871,10 +790,8 @@ const FILO5 = [
         url: "/assets/img/colgado.png",
         nextPage: false,
     },
-
-   
-    {   
-        id: 17,
+    {  
+        id: 4,
         type: "text",
         page: 0,
         text: "Giro la cabeza para verlo mejor. El Colgado parece resignado. Él tampoco puede irse si las ramas se queman, se queman, se queman. Él se quema con ellas.",
@@ -884,9 +801,8 @@ const FILO5 = [
         url: "",
         nextPage: false,
     },
-
     {   
-        id: 18,
+        id: 5,
         type: "text",
         page: 0,
         text: "Venís y me arrancás la carta de la mano. Doy un paso para atrás. Quiero alejarme más, pero no tengo dónde.",
@@ -896,9 +812,8 @@ const FILO5 = [
         url: "",
         nextPage: false,
     },
-
     {   
-        id: 25,
+        id: 6,
         type: "text",
         page: 0,
         text: "La casa se quema,",
@@ -909,7 +824,7 @@ const FILO5 = [
         nextPage: false,
     },
     {   
-        id: 25,
+        id: 7,
         type: "text",
         page: 0,
         text: "se quema,",
@@ -920,7 +835,7 @@ const FILO5 = [
         nextPage: false,
     }, 
     {   
-        id: 25,
+        id: 8,
         type: "text",
         page: 0,
         text: "se quema.",
@@ -931,7 +846,7 @@ const FILO5 = [
         nextPage: false,
     },
     {   
-        id: 25,
+        id: 9,
         type: "text",
         page: 0,
         text: "Y las puertas siguen cerradas. No puedo salir.",
@@ -941,9 +856,8 @@ const FILO5 = [
         url: "",
         nextPage: false,
     },
-   
     {   
-        id: 18,
+        id: 10,
         type: "text",
         page: 0,
         text: "Mis pies están hacia arriba, mi corazón en la escalera.",
@@ -953,9 +867,8 @@ const FILO5 = [
         url: "",
         nextPage: false,
     },
-
     {   
-        id: 18,
+        id: 11,
         type: "text",
         page: 0,
         text: "Mi cabeza rueda, sin poder conectar",
@@ -966,7 +879,7 @@ const FILO5 = [
         nextPage: false,
     },
     {   
-        id: 18,
+        id: 12,
         type: "text",
         page: 0,
         text: "nada",
@@ -977,7 +890,7 @@ const FILO5 = [
         nextPage: false,
     }, 
     {   
-        id: 18,
+        id: 13,
         type: "text",
         page: 0,
         text: "con",
@@ -988,7 +901,7 @@ const FILO5 = [
         nextPage: false,
     },
     {   
-        id: 18,
+        id: 14,
         type: "text",
         page: 0,
         text: "nada.",
@@ -999,7 +912,7 @@ const FILO5 = [
         nextPage: false,
     },
     {   
-        id: 18,
+        id: 15,
         type: "text",
         page: 0,
         text: "Pienso en Filomena, la hija de Atenas. Yo también quiero convertirme en pájaro.",
@@ -1009,33 +922,10 @@ const FILO5 = [
         url: "",
         nextPage: false,
     },
-    {   
-        id: 121,
-        type: "audio",
-        page: 0,
-        text: "",
-        className: "",
-        delay: 2000, //animate__delay-1s
-        renderNext: true,
-        url: "/assets/sounds/Wellnow.mp3",
-        nextPage: false,
-    },
-    {   
-        id: 121,
-        type: "audio",
-        page: 0,
-        text: "",
-        className: "",
-        delay: 5000, //animate__delay-1s
-        renderNext: false,
-        url: "/assets/sounds/Goodnight.mp3",
-        nextPage: true,
-    },
 ];
 
-
-const FILOMENA = [
-    /********************************   PAGINA 0 IDs[0-11]   ****************************************/ 
+export const FILOMENA = [
+    /********************************   PAGINA 1 IDs[0-11]   ****************************************/ 
     {   
         id: 0,
         type: "audio",
@@ -1169,7 +1059,7 @@ const FILOMENA = [
         url: "/assets/sounds/nenes.mp3",
         nextPage: true,
     },
-    /********************************   PAGINA 1 IDs[12-24]   ****************************************/ 
+    /********************************   PAGINA 2 IDs[12-24]   ****************************************/ 
     {   
         id: 12,
         type: "audio",
@@ -1314,59 +1204,71 @@ const FILOMENA = [
         url: "",
         nextPage: true,
     },
-    /********************************   PAGINA 0 IDs[25-49]   ****************************************/ 
+    /********************************   PAGINA 3 IDs[25-49]   ****************************************/ 
+    {   
+        id: 100,
+        type: "audio",
+        page: 2,
+        text: "",
+        className: "",
+        delay: 0, 
+        renderNext: true,
+        url: "/assets/sounds/burning.mp3",
+        nextPage: false,
+    },
     {
         id: 25,
         type: "text",
         page: 2,
         text: "Me siento desconectada.",
         className: "grs-1 gre-2 gcs-1 gce-3 up",
-        delay: 200, 
+        delay: 7500, 
         renderNext: true,
         url: "",
         nextPage: false,
     },
-    {
+    {   
         id: 26,
-        type: "text",
+        type: "img",
         page: 2,
-        text: "Mis pies están en la cama, y debajo de ellos",
-        className: "grs-1 gre-2 gcs-1 gce-3 center mb-0",
-        delay: 1500, //animate__delay-1s
+        text: "",
+        className: "gcs-5 gce-7 grs-1 gre-4",
+        height: 200,
+        delay: 1000, 
         renderNext: true,
-        url: "",
+        url: "/assets/img/espejo2.png",
         nextPage: false,
     },
     {
         id: 27,
         type: "text",
         page: 2,
-        text: "mi corazón.",
-        className: "grs-1 gre-2 gcs-2 gce-4 down center-hori",
-        delay: 1400, 
+        text: "Mis pies están en la cama, y debajo de ellos",
+        className: "grs-1 gre-2 gcs-1 gce-3 center mb-0",
+        delay: 2500, 
         renderNext: true,
         url: "",
         nextPage: false,
     },
-    {   
+    {
         id: 28,
-        type: "img",
+        type: "text",
         page: 2,
-        text: "",
-        className: "gcs-5 gce-7 grs-1 gre-4",
-        height: 200,
-        delay: 0, 
+        text: "mi corazón.",
+        className: "grs-1 gre-2 gcs-2 gce-4 down center-hori",
+        delay: 2500, 
         renderNext: true,
-        url: "/assets/img/espejo2.png",
+        url: "",
         nextPage: false,
     },
+    
     {   
         id: 29,
         type: "text",
         page: 2,
         text:"Mi",
         className: "gcs-1 gce-3 grs-2 center",
-        delay: 2000, 
+        delay: 3000, 
         renderNext: true,
         url: "",
         nextPage: false,
@@ -1443,7 +1345,7 @@ const FILOMENA = [
         page: 2,
         text: "debajo del sillón ",
         className: "gcs-2 gce-3 grs-2 down rueda-cabeza",
-        delay: 300, 
+        delay: 500, 
         renderNext: true,
         url: "",
         nextPage: false,
@@ -1454,7 +1356,7 @@ const FILOMENA = [
         page: 2,
         text: "y encuentra la carta que perdí hace meses.",
         className: "gcs-3 gce-5 grs-2 center left",
-        delay: 600, 
+        delay: 1500, 
         renderNext: true,
         url: "",
         nextPage: false,
@@ -1465,47 +1367,35 @@ const FILOMENA = [
         page: 2,
         text: "Me prometiste que hoy iba a ser un día nuevo, pero no sé si lo dijiste ayer o la semana pasada. ",
         className: "gcs-1 gce-7 grs-3 up left",
-        delay: 300, 
+        delay: 3000, 
         renderNext: true,
         url: "",
         nextPage: false,
     },
-    {
+    {   
         id: 39,
-        type: "img",
+        type: "text",
         page: 2,
-        text: "",
-        className: "gcs-1 gce-4 grs-4 gre-7",
-        height: 200,
-        delay: 0, 
+        text: "No puedo conectar ",
+        className: "gcs-1 gce-7 grs-3 down left",
+        delay: 3000, 
         renderNext: true,
-        url: "/assets/img/sillon.png",
+        url: "",
         nextPage: false,
     },
     {   
         id: 40,
         type: "text",
         page: 2,
-        text: "No puedo conectar ",
-        className: "gcs-1 gce-7 grs-3 down left",
-        delay: 300, 
+        text: "nada",
+        className: "gcs-2 gce-3 grs-3 down center-hori ",
+        delay: 1500, 
         renderNext: true,
         url: "",
         nextPage: false,
     },
     {   
         id: 41,
-        type: "text",
-        page: 2,
-        text: "nada",
-        className: "gcs-2 gce-3 grs-3 down center-hori ",
-        delay: 500, 
-        renderNext: true,
-        url: "",
-        nextPage: false,
-    },
-    {   
-        id: 42,
         type: "text",
         page: 2,
         text: "con",
@@ -1516,7 +1406,7 @@ const FILOMENA = [
         nextPage: false,
     },
     {   
-        id: 43,
+        id: 42,
         type: "text",
         page: 2,
         text: "nada.",
@@ -1527,23 +1417,68 @@ const FILOMENA = [
         nextPage: false,
     },
     {   
-        id: 44,
+        id: 43,
         type: "text",
         page: 2,
         text: "La idea fija de una casa en llamas y no tener dónde escapar me inunda la cabeza. ",
         className: "gcs-4 gce-7 grs-4 up right",
+        delay: 1500, 
+        renderNext: true,
+        url: "",
+        nextPage: false,
+    },
+    {
+        id: 44,
+        type: "img",
+        page: 2,
+        text: "",
+        className: "gcs-1 gce-4 grs-4 gre-7",
+        height: 230,
         delay: 500, 
+        renderNext: true,
+        url: "/assets/img/sillon.png",
+        nextPage: false,
+    },
+    {   
+        id: 121,
+        type: "text",
+        page: 0,
+        text: "La casa se quema,",
+        className: "gcs-4 gce-7 grs-4 down left",
+        delay: 4000, 
         renderNext: true,
         url: "",
         nextPage: false,
     },
     {   
-        id: 45,
+        id: 122,
         type: "text",
-        page: 2,
-        text: "La casa se quema, se quema, se quema, pero nadie se mueve. ",
-        className: "gcs-4 gce-7 grs-4 down left",
-        delay: 0, 
+        page: 0,
+        text: "se quema,",
+        className: "gcs-4 gce-7 grs-4 down left sequema2",
+        delay: 1500, 
+        renderNext: true,
+        url: "",
+        nextPage: false,
+    },
+    {   
+        id: 123,
+        type: "text",
+        page: 0,
+        text: "se quema,",
+        className: "gcs-4 gce-7 grs-4 down left sequema3",
+        delay: 800, 
+        renderNext: true,
+        url: "",
+        nextPage: false,
+    },
+    {   
+        id: 124,
+        type: "text",
+        page: 0,
+        text: "pero nadie se mueve.",
+        className: "gcs-4 gce-7 grs-4 down left pero",
+        delay: 800, 
         renderNext: true,
         url: "",
         nextPage: false,
@@ -1554,7 +1489,7 @@ const FILOMENA = [
         page: 2,
         text: "La gente de los balcones observa, y el humo  ",
         className: "gcs-4 gce-7 grs-6 center left",
-        delay: 300, 
+        delay: 4300, 
         renderNext: true,
         url: "",
         nextPage: false,
@@ -1564,8 +1499,8 @@ const FILOMENA = [
         type: "text",
         page: 2,
         text: "sube",
-        className: "gcs-5 gce-7 grs-6 up center-hori",
-        delay: 600, 
+        className: "gcs-6 gce-7 grs-6 up left-hori",
+        delay: 2300, 
         renderNext: true,
         url: "",
         nextPage: false,
@@ -1588,11 +1523,11 @@ const FILOMENA = [
         text: "el cielo.",
         className: "gcs-6 gce-7 grs-5 up right",
         delay: 600, 
-        renderNext: true,
+        renderNext: false,
         url: "",
-        nextPage: false,
+        nextPage: true,
     },
-    /********************************   PAGINA 3 IDs[50-66]   ****************************************/ 
+    /********************************   PAGINA 4 IDs[50-66]   ****************************************/ 
     {   
         id: 50,
         type: "audio",
@@ -1782,7 +1717,7 @@ const FILOMENA = [
         url: "",
         nextPage: true,
     },
-    /********************************   PAGINA 4 IDs[67-85]   ****************************************/ 
+    /********************************   PAGINA 5 IDs[67-85]   ****************************************/ 
     {   
         id: 67,
         type: "audio",
@@ -1995,4 +1930,3 @@ const FILOMENA = [
         nextPage: true,
     },
 ];
-z

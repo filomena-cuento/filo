@@ -82,7 +82,7 @@ export const TextArea = ( props ) => {
                                 <div 
                                 className="next-text d-flex align-items-center  animate__animated animate__fadeIn">                             
                                 <p className="m-0 pb-01">
-                                    Terminar...
+                                    Fin
                                 </p>
                                 <i className="fa fa-play-circle ml-2" aria-hidden="true"></i>       
                             </div>
