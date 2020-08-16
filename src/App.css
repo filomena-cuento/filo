@@ -74,7 +74,6 @@
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1vh;
   grid-template-rows: repeat(6, 1fr);
-  /*grid-auto-rows: minmax(10vh, auto);*/
 }
 
 /*grid positions*/
@@ -214,8 +213,33 @@
   padding-left: 18ch;
 }
 
+/*SE QUEMA*/
+.sequema2 {
+  padding-left: 16ch;
+}
+.sequema3 {
+  padding-left: 26ch;
+}
+.pero {
+  padding-left: 36ch;
+}
 
+.center-vert {
+  place-self: center;
+}
 
+/*SE QUEMA 2*/
+.sequemaI {
+  padding-left: 15ch;
+}
+.sequemaII {
+  padding-left: 24ch;
+
+}
+.nopuedo {
+  padding-left: 33ch;
+
+}
 .center-vert {
   place-self: center;
 }
@@ -239,10 +263,6 @@
 .img-left {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
-}
-
-.audio {
-  
 }
 
 .mb-0 {

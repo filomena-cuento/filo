@@ -66,7 +66,6 @@ export const TextArea = ( props ) => {
                                 renderedDataBlocks.map( dataBlock => typeOfBlockToRender(dataBlock) )
                             )
                         }
-
                         { (showNext && !isLastPage) ?(
                             <div 
                                 className="next-text d-flex align-items-center  animate__animated animate__fadeIn" 
