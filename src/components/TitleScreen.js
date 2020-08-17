@@ -4,8 +4,6 @@ import roomBg from '../assets/img/room-bg2.png'
 
 export const TitleScreen = () => {
 
-
-   // animate__animated animate__fadeIn animate__delay-3s
     return (
         <div>
             <div className="img-container" >

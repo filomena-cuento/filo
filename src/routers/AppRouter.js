@@ -11,10 +11,10 @@ import { CompleteTextScreen } from '../components/CompleteTextScreen';
 import { CreditsScreen } from '../components/CreditsScreen';
 
 export const AppRouter = () => {
-    const background = process.env.PUBLIC_URL + 'assets/img/room-bg2.png'
+    const background = process.env.PUBLIC_URL + '/assets/img/room-bg2.png'
 
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="full-container" style={{backgroundImage: "url(" + background + ")"}}>        
                 <Switch>
                     <Route exact path="/" component={ TitleScreen } />
