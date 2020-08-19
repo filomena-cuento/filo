@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-//import roomBg from '../assets/img/room-bg2.png' 
 import roomBg from '../assets/img/room-bg.jpg' 
 
 export const TitleScreen = () => {

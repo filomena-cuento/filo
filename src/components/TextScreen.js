@@ -23,8 +23,8 @@ export const TextScreen = () => {
         // setDataBlocksToRender(nextBlocks);
         setCurrentPage(currentPage + 1);    
     }
-    //const background = process.env.PUBLIC_URL + 'assets/img/room-bg2.png'
-    //className="img-fluid" style={{backgroundImage: "url(" + background + ")"}}
+    
+    
     return (
         <div>
             { dataBlocksToRender.length === 0 ? (
