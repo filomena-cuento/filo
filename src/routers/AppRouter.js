@@ -11,7 +11,7 @@ import { CompleteTextScreen } from '../components/CompleteTextScreen';
 import { CreditsScreen } from '../components/CreditsScreen';
 
 export const AppRouter = () => {
-    const background = process.env.PUBLIC_URL + '/assets/img/room-bg2.png'
+    const background = process.env.PUBLIC_URL + '/assets/img/room-bg.jpg'
 
     return (
         <Router basename={process.env.PUBLIC_URL}>

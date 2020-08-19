@@ -43,7 +43,7 @@ export const CreditsScreen = () => {
                     </div>
 
                     <div className="gcs-5 gce-7 grs-6">
-                        <Link exact='true' to="/cuento">
+                        <Link exact='true' to="/cuento" className="link">
                             <div className=" d-flex align-items-center link">                             
                                 <p className="m-0 pb-1">
                                     Leer el texto completo
@@ -53,11 +53,11 @@ export const CreditsScreen = () => {
                         </Link>
                     </div>
                     <div className="gcs-2 gce-4 grs-6">
-                        <Link exact='true' to="/">
-                            <div className=" d-flex align-items-center link">                             
+                        <Link exact='true' to="/" className="link">
+                            <div className=" d-flex align-items-center">                             
                                 <i className="fa fa-arrow-left ml-2" aria-hidden="true">  </i>       
                                 <p className="pl-1 m-0 pb-1">
-                                    Volver al inicio
+                                    Volver a empezar
                                 </p>
                             </div>
                         </Link>
@@ -67,3 +67,5 @@ export const CreditsScreen = () => {
         </div>
     )
 }
+
+//nada con nada
