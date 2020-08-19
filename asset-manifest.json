@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/filo/static/css/main.0300764f.chunk.css",
+    "main.js": "/filo/static/js/main.8ff595a1.chunk.js",
+    "main.js.map": "/filo/static/js/main.8ff595a1.chunk.js.map",
+    "runtime-main.js": "/filo/static/js/runtime-main.0f8e9cd0.js",
+    "runtime-main.js.map": "/filo/static/js/runtime-main.0f8e9cd0.js.map",
+    "static/css/2.3dbf44be.chunk.css": "/filo/static/css/2.3dbf44be.chunk.css",
+    "static/js/2.0ee7ce85.chunk.js": "/filo/static/js/2.0ee7ce85.chunk.js",
+    "static/js/2.0ee7ce85.chunk.js.map": "/filo/static/js/2.0ee7ce85.chunk.js.map",
+    "index.html": "/filo/index.html",
+    "precache-manifest.777186c43eb8c6af27203dc6b4aac6cd.js": "/filo/precache-manifest.777186c43eb8c6af27203dc6b4aac6cd.js",
+    "service-worker.js": "/filo/service-worker.js",
+    "static/css/2.3dbf44be.chunk.css.map": "/filo/static/css/2.3dbf44be.chunk.css.map",
+    "static/css/main.0300764f.chunk.css.map": "/filo/static/css/main.0300764f.chunk.css.map",
+    "static/js/2.0ee7ce85.chunk.js.LICENSE.txt": "/filo/static/js/2.0ee7ce85.chunk.js.LICENSE.txt",
+    "static/media/room-bg.jpg": "/filo/static/media/room-bg.0784216a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f8e9cd0.js",
+    "static/css/2.3dbf44be.chunk.css",
+    "static/js/2.0ee7ce85.chunk.js",
+    "static/css/main.0300764f.chunk.css",
+    "static/js/main.8ff595a1.chunk.js"
+  ]
+}
