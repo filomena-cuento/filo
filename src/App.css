@@ -160,12 +160,18 @@
   grid-row-end: 7;
 }
 
+
+/*Posiciones*/
 .up {
   align-self: start;
 }
 
 .center {
   align-self: center;
+}
+
+.center-vert {
+  place-self: center;
 }
 
 .down {
@@ -184,84 +190,76 @@
   justify-self: end;
 }
 
-/*RUEDA*/
+/*RUEDA pagina 3*/
 .rueda-cabeza {
-  padding-left: 3ch;
+  padding-left: 2ch;
+  margin-left: 2px;
 }
 .rueda-r {
-  padding-left: 10ch;
+  padding-left: 8ch;
+  margin-left: 2px;
 }
 .rueda-u {
-  padding-left: 12ch;
+  padding-left: 10ch;
 }
 .rueda-e {
-  padding-left: 14ch;
+  padding-left: 12ch;
 }
 .rueda-d {
-  padding-left: 16ch;
+  padding-left: 14ch;
 }
 .rueda-a {
+  padding-left: 16ch;
+}
+.encuentra {
+  padding-left: 4ch;
+}
+
+/*SE QUEMA pagina 3*/
+.sequema2 {
+  padding-left: 14ch;
+}
+.sequema3 {
+  padding-left: 22ch;
+}
+.pero {
+  padding-left: 30ch;
+}
+
+/*SE QUEMA pagina 4*/
+.sequemaI {
+  padding-left: 14ch;
+}
+.sequemaII {
+  padding-left: 22ch;
+}
+.nopuedo {
+  padding-left: 30ch;
+}
+
+/*NADA CON NADA pagina 3*/
+.nada1 {
+  padding-left: 14ch;
+}
+.con {
   padding-left: 18ch;
 }
 
-/*SE QUEMA*/
-.sequema2 {
-  padding-left: 16ch;
-}
-.sequema3 {
-  padding-left: 25ch;
-}
-.pero {
-  padding-left: 34ch;
-}
-
-.center-vert {
-  place-self: center;
-}
-
-/*SE QUEMA 2*/
-.sequemaI {
-  padding-left: 15ch;
-}
-.sequemaII {
-  padding-left: 24ch;
-
-}
-.nopuedo {
-  padding-left: 33ch;
-
-}
-.center-vert {
-  place-self: center;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
-}
-
-/* */
-.nada1 {
-  padding-left: 17ch;
-}
-
-.con {
-  padding-left: 22ch;
-}
-
 .nada2 {
-  padding-left: 26ch;
+  padding-left: 21ch;
 }
 
+/*NADA CON NADA pagina 5*/
 .nada3 {
-  padding-left: 11ch;
+  padding-left: 9ch;
 }
 
 .con2 {
-  padding-left: 16ch;
+  padding-left: 13ch;
 }
 
 .nada4 {
-  padding-left: 20ch;
+  padding-left: 16ch;
 }
 
 /*CREDITS*/
