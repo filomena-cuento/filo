@@ -29,11 +29,41 @@
   color: rgb(0, 0, 0);
   font-size: calc(0.5em + 0.8vw);
   left: 19%;
-  top: 29%;
+  top: 30%;
+  opacity: 0.9;
+}
+
+.cuento-completo-text {
+  z-index: 100;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: calc(0.5em + 0.8vw);
+  left: 19%;
+  top: 34%;
+  opacity: 0.9;
+}
+
+.creditos-text {
+  z-index: 100;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: calc(0.5em + 0.8vw);
+  left: 19%;
+  top: 37.8%;
   opacity: 0.9;
 }
 
 .loading-text {
+  color: white;
+}
+
+.condi {
+  z-index: 500;
+  position: absolute;
+  font-size: calc(0.4em + 0.5vw);
+  right: 50%;
+  bottom: 50%;
+  cursor: pointer;
   color: white;
 }
 
@@ -284,6 +314,11 @@ hr {
   color: white;
 }
 
+.link-right {
+  float: right;
+}
+
+
 /* COMPLETE TEXT SCREEN */
 
 .black-bg {
@@ -301,6 +336,10 @@ hr {
   min-width: 1024px;
   opacity: 0.92;
   color: white;
+}
+
+.txt-container {
+  margin-top: 10vh;
 }
 
 

@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export const CreditsScreen = () => {
+
+    if (localStorage.getItem('firstTime')) {
+        localStorage.setItem('firstTime', "");
+    }
+    
+
     return ( 
         <div className="container">
             <div className="row animate__animated animate__fadeIn">

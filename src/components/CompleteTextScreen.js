@@ -10,25 +10,29 @@ export const CompleteTextScreen = () => {
 
     return (
         <div className="black-bg" style={{backgroundImage: "url(" + background + ")"}}>
-            <div className="">
-                <Link exact='true' to="/" className="link">
-                    <div className="d-flex align-items-center">                             
-                        <i className="fa fa-arrow-left ml-2" aria-hidden="true">  </i>       
-                        <p className="pl-1 m-0 pb-1">
-                            Volver a empezar
-                        </p>
+            <div className="container pb-1">
+                <div className="row justify-content-between">
+                    <div className="col-2 ">
+                        <Link exact='true' to="/credits" className="link ">
+                            <div className=" d-flex align-items-center">   
+                                <i className="fa fa-arrow-left ml-2" aria-hidden="true">  </i>                           
+                                <p className="pl-1 m-0 pb-1">
+                                    Créditos
+                                </p>    
+                            </div>
+                        </Link>
                     </div>
-                </Link>
-            </div>
-            <div className="">
-                <Link exact='true' to="/credits" className="link">
-                    <div className=" d-flex align-items-center link">   
-                        <i className="fa fa-arrow-left ml-2" aria-hidden="true">  </i>                           
-                        <p className="pl-1 m-0 pb-1">
-                            Creditos
-                        </p>    
+                    <div className="col-2 align-self-right ">
+                        <Link exact='true' to="/" className="link link-right">
+                            <div className="d-flex align-items-center">                             
+                                <p className="pl-1 m-0 pb-1">
+                                    Volver a empezar
+                                </p>
+                                <i className="fa fa-arrow-right ml-2" aria-hidden="true">  </i>       
+                            </div>
+                        </Link>
                     </div>
-                </Link>
+                </div>
             </div>
 
             <div className="container">
