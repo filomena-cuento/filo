@@ -29,10 +29,10 @@ export const CreditsScreen = () => {
                     </div>
 
                     <div className="gcs-3 gce-7 grs-3 left">
-                        <p className="mb-0"> Paula Yeyati Preiss</p>
-                        <p className="mb-0"> Julián Gonzalez Heredia</p>
-                        <p className="mb-0"> Lara Yeyati Preiss</p>    
-                        <p className="mb-0"> Clarisa Moreyra</p>
+                        <p className="mb-0"> Julieta Contreras</p>
+                        <p className="mb-0"> Julián Contreras</p>
+                        <p className="mb-0"> Lara Contreras</p>    
+                        <p className="mb-0"> Clarisa Contreras</p>
                             
                     </div>
 
