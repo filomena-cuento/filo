@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import roomBg from '../assets/img/room-bg2.jpg' 
 
-export const TitleScreen = () => {
+export const TitleScreen = ( {unmute} ) => {
 
     let firstTime = localStorage.getItem('firstTime');
     if (firstTime === null){
@@ -21,7 +21,7 @@ export const TitleScreen = () => {
                     <p className="mb-0 animate__animated animate__fadeIn">FILOMENA</p>
                 </div>
                
-                <Link exact='true' to="/filomena">
+                <Link exact='true' to="/filomena" onClick={unmute} >
                     <div className="start-text d-flex align-items-center animate__animated animate__fadeIn animate__delay-1s">
                         <p className="m-0 pb-1">
                             Empezá tu lectura

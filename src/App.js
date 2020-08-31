@@ -7,7 +7,9 @@ import { AppRouter } from './routers/AppRouter.js';
 export const App = () => {
 
   return (
-    <AppRouter />
+    <>
+      <AppRouter />
+    </>
   )
 }
 
